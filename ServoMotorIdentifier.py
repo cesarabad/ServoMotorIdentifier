@@ -2,7 +2,7 @@ import serial
 import time
 
 # Cambia esto al puerto correcto de tu adaptador USB TTL
-PORT = "/dev/ttyUSB0"  
+PORT = "/dev/ServoMotors"  
 BAUDRATE = 38400
 TIMEOUT = 0.05  # 50 ms, para no leer basura
 
