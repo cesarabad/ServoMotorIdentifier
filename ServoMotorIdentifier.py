@@ -2,7 +2,7 @@ import serial
 import time
 
 PORT = "/dev/ServoMotors" 
-BAUDRATE = 115200    
+BAUDRATE = 38400  
 
 def checksum(packet):
     return (~sum(packet[2:]) & 0xFF)
