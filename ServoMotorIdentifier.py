@@ -22,6 +22,7 @@ def scan_servos(ser):
         if ser.in_waiting:
             resp = ser.read(ser.in_waiting)
             if resp:
+                print("Servo detectado: ", sid)
                 found.append(sid)
     return found
 
