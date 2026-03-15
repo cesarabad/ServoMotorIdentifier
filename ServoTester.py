@@ -2,7 +2,7 @@ import serial
 import time
 
 PORT = "/dev/servo_rs485"   # o /dev/ttyACM0
-BAUDRATE = 115200
+BAUDRATE = 38400
 
 SERVO1_ID = 1
 SERVO2_ID = 2
