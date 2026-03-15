@@ -1,4 +1,10 @@
 import time
+import serial
+
+PORT = "/dev/servo_rs485"  # tu symlink
+BAUDRATE = 34800
+
+ser = serial.Serial(PORT, BAUDRATE, timeout=0.1)
 
 def build_ping_packet(servo_id):
     # Comando 0x15 = “Read position” / ping (depende del protocolo exacto)
